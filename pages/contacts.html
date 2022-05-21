@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+    <div class="background"></div>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <ul class="navbar-list">
+                    <li class="navbar-item"><a class="navbar-link" href="../index.html">Главная</a></li>
+                    <li class="navbar-item"><a class="navbar-link" href="catalog.html">Каталог</a></li>
+                    <li class="navbar-item"><a class="navbar-link" href="articles.html">Статьи</a></li>
+                    <li class="navbar-item"><a class="navbar-link" href="gallery.html">Галерея</a></li>
+                    <li class="navbar-item"><a class="navbar-link" href="page-nav.html">Навигация</a></li>
+                    <li class="navbar-item"><a class="navbar-link" href="registration.html">Регистрация</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="content container">
+        <h1>Контакты</h1>
+        <div class="contacts">
+            <h2 class="contacts">Как добраться?</h2>
+            <p class="contacts">GPS координаты - 50.271085N ,30.533806E
+                При альтернативном вводе адреса необходимо указывать: село Ходосеевка, Обуховское шоссе-2 (на карте
+                Google
+                обозначено как Днепропетровское шоссе).</p>
+            <img class="contacts" src="../assets/pics/map.jpg" alt="#">
+        </div>
+
+        <form action="contacts.php" method="get">
+            <fieldset class="fieldset-reg">
+                <legend>Обратная связь</legend>
+                <div class="form-group">
+                    <label for="name">Имя*</label>
+                    <input class="capital" type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="number">Телефон*</label>
+                    <input type="tel" id="number" name="number" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Адрес электронной почты*</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="txt">Задайте вопрос</label>
+                    <textarea name="txt" id="txt" cols="150" rows="10" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <input type="submit" value="Отправить форму">
+                </div>
+            </fieldset>
+        </form>
+    </div>
+
+    <footer>
+        <div class="container">
+            <span>&copy; Viktor Tesliuk</span>
+        </div>
+    </footer>
+</body>
+
+</html>

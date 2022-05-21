@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+    <div class="background"></div>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <ul class="navbar-list">
+                    <li class="navbar-item"><a class="navbar-link" href="../index.html">Главная</a></li>
+                    <li class="navbar-item"><a class="navbar-link" href="catalog.html">Каталог</a></li>
+                    <li class="navbar-item"><a class="navbar-link" href="contacts.html">Контакты</a></li>
+                    <li class="navbar-item"><a class="navbar-link" href="gallery.html">Галерея</a></li>
+                    <li class="navbar-item"><a class="navbar-link" href="page-nav.html">Навигация</a></li>
+                    <li class="navbar-item"><a class="navbar-link" href="articles.html">Статьи</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="content container">
+        <h1>Регистрация</h1>
+        <form action="register.php" method="get">
+            <fieldset class="fieldset-reg">
+                <legend>Основная информация</legend>
+                <div class="form-group">
+                    <label for="fio1">Фамилия*</label>
+                    <input class="capital" type="text" id="fio1" name="surname" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="fio2">Имя*</label>
+                    <input class="capital" type="text" id="fio2" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="fio3">Отчество*</label>
+                    <input class="capital" type="text" id="fio3" name="patronymic" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="img">Добавьте фотографию</label>
+                    <input type="file" id="img" name="img">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Адрес электронной почты*</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="pass">Пароль*</label>
+                    <input type="password" id="pass" name="pass" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="bdate">Выберите дату рождения</label>
+                    <input type="date" id="bdate" name="bdate">
+                </div>
+            </fieldset>
+
+            <fieldset class="fieldset-reg">
+                <legend>Укажите Ваш пол</legend>
+                <div class="form-group-sm form-group">
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Мужской</label>
+                </div>
+
+                <div class="form-group-sm form-group">
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Женский</label>
+                </div>
+
+                <div class="form-group-sm form-group">
+                    <input type="radio" id="another" name="gender" value="another">
+                    <label for="another">Другое</label>
+                </div>
+            </fieldset>
+
+            <fieldset class="fieldset-reg">
+                <legend>Предпочтения по кухне</legend>
+                <div class="form-group-sm form-group">
+                    <input type="checkbox" id="jp" name="kitchen" value="jp">
+                    <label for="jp">Японская</label>
+                </div>
+
+                <div class="form-group-sm form-group">
+                    <input type="checkbox" id="ua" name="kitchen" value="ua">
+                    <label for="ua">Украинская</label>
+                </div>
+
+                <div class="form-group-sm form-group">
+                    <input type="checkbox" id="ve" name="kitchen" value="ve">
+                    <label for="ve">Вьетнамская</label>
+                </div>
+
+            </fieldset>
+
+            <fieldset class="fieldset-reg">
+                <legend>Дополнительная информация</legend>
+                <div class="form-group">
+                    <label for="site">Адрес сайта</label>
+                    <input type="url" id="site" name="site" value="http://mysite.name">
+                </div>
+
+                <div class="form-group">
+                    <label for="txt">О себе в произвольной форме:</label>
+                    <textarea name="txt" id="txt" cols="70" rows="10"></textarea>
+                </div>
+            </fieldset>
+
+            <fieldset class="fieldset-reg">
+                <legend>Кнопки управления формой</legend>
+                <div class="form-group">
+                    <input type="submit" value="Зарегистрироваться">
+                </div>
+
+                <div class="form-group">
+                    <input type="reset" value="Сбросить форму">
+                </div>
+            </fieldset>
+        </form>
+    </div>
+
+    <footer>
+        <div class="container">
+            <span>&copy; Viktor Tesliuk</span>
+        </div>
+    </footer>
+</body>
+
+</html>
